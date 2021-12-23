@@ -30,7 +30,10 @@ var de_val="";
 var select_event = function(elem){
 	de_val = elem.options[elem.selectedIndex].value;
 	console.log(JSON.stringify(de_data[de_val]));
-	document.getElementById('de_data').value = JSON.stringify(de_data[de_val]);
+        var badJSON = de_data[de_val];
+        var parseJSON = JSON.parse(badJSON);
+        var JSONInPrettyFormat = JSON.stringify(parseJSON, undefined, 4);
+	document.getElementById('de_data').value = JSON.stringify(JSONInPrettyFormat);
 	console.log("Selected: " + de_val);
 }  
 var send_event = function(){
