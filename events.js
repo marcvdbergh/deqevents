@@ -1,4 +1,5 @@
 console.log('DEQ event booklet loaded in : ' + window.document.title);
+const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 var version = urlParams.get('version');
 if(version==""){
