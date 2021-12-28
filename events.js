@@ -1,4 +1,6 @@
 console.log('DEQ event booklet loaded in : ' + window.document.title);
+const urlParams = new URLSearchParams(queryString);
+var version = urlParams.get('version');
 
 function importJS(src, look_for, onload) {
   var s = window.document.createElement('script');
@@ -38,9 +40,9 @@ function wait_for_script_load(look_for, callback) {
 }
 
 (function(){
-  importCSS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents/style.css?d='+Date.now() );
+  importCSS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents@'+version+'/style.css?d='+Date.now() );
   importJS('https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js', 'jQuery', function() { // Load everything else when it is done.
     jQuery.noConflict();
-    importJS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents/interface.js?d='+Date.now());
+    importJS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents@'+version+'/interface.js?d='+Date.now());
   });
 })();
