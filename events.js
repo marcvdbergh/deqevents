@@ -1,6 +1,9 @@
 console.log('DEQ event booklet loaded in : ' + window.document.title);
 const urlParams = new URLSearchParams(queryString);
 var version = urlParams.get('version');
+if(version==""){
+    console.log("DEQEvents: no version found in url");
+}
 
 function importJS(src, look_for, onload) {
   var s = window.document.createElement('script');
