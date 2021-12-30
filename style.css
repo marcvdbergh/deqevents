@@ -1,5 +1,5 @@
 #de_div{
-	font-size:14px;
+	font-size:12px;
     font-family: Arial;
     font-size: 100%;
     line-height: 1.0;
@@ -8,9 +8,9 @@
 textarea{
 	float:left;
 }
-textarea, select, button{
+textarea, select, button, input{
 	margin:10px;
-	font-size:14px;
+	font-size:12px;
     font-family: Arial;
     font-size: 100%;
     line-height: 1.0;	
