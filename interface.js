@@ -10,9 +10,9 @@ de_data = {
 	},
 	pageview2 : {
 	  "purchaseID": 1640160445173,
-	  "pageDomain": "www.asnbank.nl",
+	  "pageDomain": location.hostname,
 	  "pageSiteSegment": "Particulier",
-	  "pageName": "Verzekeren:Afsluiten",
+	  "pageName": document.title,
 	  "userLoginStatus": "not logged in",
 	  "platformEnvironment": "test",
 	  "platformName": "xc:fp",
