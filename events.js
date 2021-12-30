@@ -1,6 +1,7 @@
 console.log('DEQ event booklet loaded in : ' + window.document.title);
+var version="";
 if(document.getElementById('deqevents')){
-    const version = document.getElementById('deqevents').getAttribute('data-version');
+    version = document.getElementById('deqevents').getAttribute('data-version');
     if(version==""){
         console.log("DEQEvents: no version found, see readme : https://github.com/marcvdbergh/deqevents/blob/main/README.md");
     }
