@@ -91,7 +91,7 @@ var send_event = function(){
 DEQevents.prototype.makeInterface = function(me) {
   console.log(this.de_div);
   this.de_div.innerHTML = `
-  Sen event:&nbsp;<a href="javascript:var elem = document.getElementById('de_div');elem.parentNode.removeChild(elem);void(0);">[X]</a>
+  Send event:&nbsp;<a href="javascript:var elem = document.getElementById('de_div');elem.parentNode.removeChild(elem);void(0);">[X]</a>
   <select id="events" onchange="select_event(this)" name="events" id="events">
   <option value="pageview">Page view</option>
   <option value="pageview2">Page view 2</option>
