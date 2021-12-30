@@ -1,7 +1,5 @@
 console.log('DEQ event booklet loaded in : ' + window.document.title);
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-var version = urlParams.get('version');
+const version = document.getElementById('deqevent').getAttribute('data-version');
 if(version==""){
     console.log("DEQEvents: no version found in url");
 }
