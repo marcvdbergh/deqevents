@@ -1,12 +1,21 @@
 #de_div{
-	font-size=14px;
+	font-size:14px;
+    font-family: Arial;
+    font-size: 100%;
+    line-height: 1.0;
+	background-color: #dcf;
 }
 textarea{
 	float:left;
 }
 textarea, select, button{
 	margin:10px;
+	font-size:14px;
+    font-family: Arial;
+    font-size: 100%;
+    line-height: 1.0;	
 }
 a {
 	float:right;
+	color:black;
 }
