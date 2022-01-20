@@ -1,0 +1,23 @@
+{
+  "name": "deqevents",
+  "version": "1.0.0",
+  "description": "DEQ events interface",
+  "main": "events.js",
+  "scripts": {
+    "test": "nvt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcvdbergh/deqevents.git"
+  },
+  "keywords": [
+    "DEQ",
+    "events"
+  ],
+  "author": "Marc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcvdbergh/deqevents/issues"
+  },
+  "homepage": "https://github.com/marcvdbergh/deqevents#readme"
+}
