@@ -1,0 +1,68 @@
+{
+	"pageview" : {
+		"pageDomain": "www.testdomain.nl",
+		"platformEnvironment": "production",
+		"pageName": "Testpagina",
+		"pageType": "content",
+		"pageId": "241788",
+		"event" : "pageview"
+	},
+	"pageview2" : {
+		"purchaseID": 1640160445173,
+		"pageDomain": "www.testdomain.nl",
+		"pageSiteSegment": "Particulier",
+		"pageName": "Particulier:Testpage",
+		"userLoginStatus": "not logged in",
+		"platformEnvironment": "test",
+		"platformName": "xc:fp",
+		"pageType": "form",
+		"pageSiteSection": "Verzekeren",
+		"products": [
+		{
+		  "productName": "Product 1",
+		  "productCategory": "Verzekeren"
+		},
+		{
+		  "productName": "Product 2",
+		  "productCategory": "Verzekeren"
+		}
+		],
+		"analyticsEvents": [
+		"pageview",
+		"purchase"
+		],
+		"event" : "pageview"
+	},
+	"formstep" : {
+		"purchaseID": 1234567890,
+		"previousPagePercentageViewed": 100,
+		"event": "form step",
+		"formName": "Formulier naam 1",
+		"formType": "Angular",
+		"formStepName": "Tweede stap",
+		"formStepNumber": 0,
+		"formFieldValues": [
+		{
+		  "name": "Veldnaam1",
+		  "value": "veldwaarde2"
+		},
+		{
+		  "name": "Veldnaam2",
+		  "value": "veldwaarde2"
+		}
+		],
+		"event" : "form step"
+	},
+	"click" : {
+		"clickedElement": "MyButton",
+		"clickAction": "Open",
+		"formName": "Clickdata",
+		"formStepName": "Button",		  
+		"event" : "click"
+	},
+	"dyncontent" : {
+		"partName": "Testcontent",
+		"partAction": "Loaded",
+        "event" : "dyncontent"
+	}
+}
