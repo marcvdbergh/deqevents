@@ -79,7 +79,7 @@
       				"impression"
      		]
 	},
-	"error" = {
+	"error" : {
 		"errorType": "External system",
 		"errorDescription": "Calculation error:Error ID:124535",
 		"errorMessage" : "CCR calculation error",
