@@ -77,12 +77,14 @@
 		"impressionCampaign": "Pega campaign srv 1",
   		"analyticsEvents": [
       				"impression"
-     		]
+     		],
+		"event" : "impression"
 	},
 	"error" : {
 		"errorType": "External system",
 		"errorDescription": "Calculation error:Error ID:124535",
 		"errorMessage" : "CCR calculation error",
-		"errorMetrics" : "124535"
+		"errorMetrics" : "124535",
+		"event" : "error"
 	}	
 }
