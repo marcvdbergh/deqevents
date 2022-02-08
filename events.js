@@ -49,6 +49,6 @@ function wait_for_script_load(look_for, callback) {
   importCSS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents@'+version+'/style.css?d='+Date.now() );
   importJS('https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js', 'jQuery', function() { // Load everything else when it is done.
     jQuery.noConflict();
-    importJS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents@'+version+'/interface.js?d='+Date.now());
+    importJS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents@'+version+'/interface.js?version='+version+'&d='+Date.now());
   });
 })();
