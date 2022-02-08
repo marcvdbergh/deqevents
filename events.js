@@ -1,8 +1,8 @@
 console.log('DEQ event booklet loaded in : ' + window.document.title);
-var version="";
+var DEQeventsVersion="";
 if(document.getElementById('deqevents')){
-    version = document.getElementById('deqevents').getAttribute('data-version');
-    if(version==""){
+    DEQeventsVersion = document.getElementById('deqevents').getAttribute('data-version');
+    if(DEQeventsVersion==""){
         console.log("DEQEvents: no version found, see readme : https://github.com/marcvdbergh/deqevents/blob/main/README.md");
     }
 }else{
@@ -46,9 +46,9 @@ function wait_for_script_load(look_for, callback) {
 }
 
 (function(){
-  importCSS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents@'+version+'/style.css?d='+Date.now() );
+  importCSS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents@'+DEQeventsVersion+'/style.css?d='+Date.now() );
   importJS('https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js', 'jQuery', function() { // Load everything else when it is done.
     jQuery.noConflict();
-    importJS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents@'+version+'/interface.js?version='+version+'&d='+Date.now());
+    importJS('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents@'+DEQeventsVersion+'/interface.js?d='+Date.now());
   });
 })();
