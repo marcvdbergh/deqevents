@@ -1,72 +1,13 @@
-//default data
-de_data = {
-	pageview : {
-		  "pageDomain": location.hostname,
-		  "platformEnvironment": "production",
-		  "pageName": document.title,
-		  "pageType": "content",
-		  "pageId": "241788",
-		  "event" : "pageview"
-	},
-	pageview2 : {
-	  "purchaseID": 1640160445173,
-	  "pageDomain": location.hostname,
-	  "pageSiteSegment": "Particulier",
-	  "pageName": document.title,
-	  "userLoginStatus": "not logged in",
-	  "platformEnvironment": "test",
-	  "platformName": "xc:fp",
-	  "pageType": "form",
-	  "pageSiteSection": "Verzekeren",
-	  "products": [
-		{
-		  "productName": "ASN Verzekering woonhuis",
-		  "productCategory": "Verzekeren"
-		},
-		{
-		  "productName": "ASN Verzekering algemeen",
-		  "productCategory": "Verzekeren"
-		}
-	  ],
-	  "analyticsEvents": [
-		"pageview",
-		"purchase"
-	  ],
-	  "event" : "pageview"
-	},
-	formstep : {
-		  "purchaseID": 1234567890,
-		  "previousPagePercentageViewed": 100,
-		  "event": "form step",
-		  "formName": "Formulier naam 1",
-		  "formType": "Angular",
-		  "formStepName": "Tweede stap",
-		  "formStepNumber": 0,
-		  "formFieldValues": [
-			{
-			  "name": "Veldnaam1",
-			  "value": "veldwaarde2"
-			},
-			{
-			  "name": "Veldnaam2",
-			  "value": "veldwaarde2"
-			}
-		  ],
-          "event" : "form step"
-	},
-	click : {
-		  "clickedElement": "MyButton",
-		  "clickAction": "Open",
-		  "formName": "Clickdata",
-		  "formStepName": "Button",		  
-		  "event" : "click"
-	},
-	dyncontent : {
-		"partName": "Testcontent",
-		"partAction": "Loaded",
-        "event" : "dyncontent"
-	}
+var httpGet = function(theUrl)
+  {
+    var xmlHttp = null;
+    xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", theUrl, false );
+    xmlHttp.send( null );
+    return xmlHttp.responseText;
 }
+var de_data = JSON.parse(httpGet('https://cdn.jsdelivr.net/gh/marcvdbergh/deqevents@'+DEQeventsVersion+'/DEQjson.txt?d='+Date.now()));
+
 var de_data_store = "";
 de_data_store = localStorage.getItem("deqeventsjson");
 if(de_data_store) {
@@ -98,6 +39,7 @@ var removeOptions = function(selectElement) {
       selectElement.remove(i);
    }
 }
+
 DEQevents.prototype.makeInterface = function(me) {
 	  var options = "";
 	  for(event in de_data){
@@ -137,7 +79,6 @@ DEQevents.prototype.makeInterface = function(me) {
 		fr.readAsText(this.files[0]);
 	})
 };
-
 var deqmessage;
 deq_events = new DEQevents();
 deq_events.makeInterface();
