@@ -57,12 +57,26 @@
 		"clickedElement": "MyButton",
 		"clickAction": "Open",
 		"formName": "Clickdata",
-		"formStepName": "Button",		  
+		"formStepName": "Button",
+		"impressionID": "-12345",
 		"event" : "click"
 	},
 	"dyncontent" : {
 		"partName": "Testcontent",
 		"partAction": "Loaded",
-        "event" : "dyncontent"
+        	"event" : "dyncontent"
+	},
+	"impression" : {
+		"impressionName": "Impressie 1",
+		"impressionSource": "Pega",
+		"impressionID": "-12345",
+		"impressionGroup": "Impressie1",
+		"impressionIssue": "SNS_Service",
+		"impressionPath": "/SNS_Service/Activeren/Impressie1",
+		"impressionPosition": "1",
+		"impressionCampaign": "Pega campaign srv 1",
+  		"analyticsEvents": [
+      				"impression"
+     		]
 	}
 }
