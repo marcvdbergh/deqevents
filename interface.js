@@ -39,6 +39,15 @@ var removeOptions = function(selectElement) {
       selectElement.remove(i);
    }
 }
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+  element.style.display = 'none';
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
 
 DEQevents.prototype.makeInterface = function(me) {
 	  var options = "";
@@ -46,7 +55,7 @@ DEQevents.prototype.makeInterface = function(me) {
 		options += '<option value="'+event+'">'+event+'</option>';
 	  }
 	  this.de_div.innerHTML = `
-	  Send event:&nbsp;<a href="javascript:var elem = document.getElementById('de_div');elem.parentNode.removeChild(elem);void(0);">[X]</a>
+	  <span style="cursor: grabbing" onclick="download('DEQjson.txt',JSON.stringify(de_data, undefined, 4))" title="Download this file" style="cursor: grabbing;">Send event</span>:&nbsp;<a href="javascript:var elem = document.getElementById('de_div');elem.parentNode.removeChild(elem);void(0);">[X]</a>
 	`;
 	  this.de_div.innerHTML += '<select id="events" onchange="select_event(this)" name="events" id="events">'+ options + '</select>';
 	  this.de_div.innerHTML += `
