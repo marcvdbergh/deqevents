@@ -1,21 +1,27 @@
 #de_div{
-	font-size:12px;
-    font-family: Arial;
-    font-size: 100%;
-    line-height: 1.0;
-	background-color: #dcf;
+	font-size:12px !important;
+    	font-family: Arial !important;
+    	font-size: 100% !important;
+    	line-height: 1.0 !important;
+	background-color: #dcf !important;
 }
 textarea{
-	float:left;
+	float:left !important;
 }
 textarea, select, button, input{
-	margin:10px;
-	font-size:12px;
-    font-family: Arial;
-    font-size: 100%;
-    line-height: 1.0;	
+    padding: 0px !important;
+    border: 1px solid #929497 !important;
+    border-radius: 0 !important;
+    color: #212121 !important;
+    font-size: 12px !important;
+    font-weight: normal !important;
+    width: 100% !important;
+    height:300px !important;
+    margin:10px !important;
+    font-family: Arial !important;
+    line-height: 1.0 !important;	
 }
 a {
-	float:right;
-	color:black;
+	float:right !important;
+	color:black !important;
 }
