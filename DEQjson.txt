@@ -1,36 +1,37 @@
 {
 	"pageview" : {
-		"pageDomain": "www.testdomain.nl",
-		"platformEnvironment": "production",
-		"pageName": "Testpagina",
-		"pageType": "content",
-		"pageId": "241788",
-		"event" : "pageview"
-	},
-	"pageview2" : {
 		"purchaseID": 1640160445173,
+		"siteBrand": "SNS_WebSDK",
 		"pageDomain": "www.testdomain.nl",
 		"pageSiteSegment": "Particulier",
 		"pageName": "Particulier:Testpage",
 		"userLoginStatus": "not logged in",
 		"platformEnvironment": "test",
-		"platformName": "xc:fp",
+		"platformName": "WebSDK",
 		"pageType": "form",
 		"pageSiteSection": "Verzekeren",
 		"products": [
 		{
-		  "productName": "Product 1",
-		  "productCategory": "Verzekeren"
+		  "productName": "TestProduct 1",
+		  "productCategory": "WebSDK"
 		},
 		{
-		  "productName": "Product 2",
-		  "productCategory": "Verzekeren"
+		  "productName": "TestProduct 2",
+		  "productCategory": "WebSDK"
 		}
 		],
 		"analyticsEvents": [
 		"pageview",
 		"purchase"
 		],
+		"event" : "pageview"
+	},
+	"pageview2" : {
+		"pageDomain": "www.testdomain.nl",
+		"platformEnvironment": "production",
+		"pageName": "Testpagina",
+		"pageType": "content",
+		"pageId": "241788",
 		"event" : "pageview"
 	},
 	"formstep" : {
