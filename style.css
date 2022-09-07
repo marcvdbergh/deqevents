@@ -8,7 +8,7 @@
 textarea{
 	float:left !important;
 }
-select{
+select, button, input{
     padding: 0px !important;
     border: 1px solid #929497 !important;
     border-radius: 0 !important;
@@ -21,7 +21,7 @@ select{
     font-family: Arial !important;
     line-height: 1.0 !important;	
 }
-textarea, button, input{
+textarea{
     padding: 0px !important;
     border: 1px solid #929497 !important;
     border-radius: 0 !important;
@@ -29,7 +29,7 @@ textarea, button, input{
     font-size: 12px !important;
     font-weight: normal !important;
     width: 100% !important;
-    height:300px !important;
+    height:250px !important;
     margin:10px !important;
     font-family: Arial !important;
     line-height: 1.0 !important;	
