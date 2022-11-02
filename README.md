@@ -8,3 +8,8 @@ javascript:(function(){var s=document.createElement('div');s.setAttribute('id', 
 
 ![image](https://user-images.githubusercontent.com/40234569/199434056-a4beffef-3acc-4e01-b513-d98e9cdeb557.png)
 
+Send event (link) = Download json file
+Dropdown = Select event to send
+Send event (button) = Send event to DEQ
+Textarea = Editable event
+File button = Choose custom json file (Stored in localStorage)
